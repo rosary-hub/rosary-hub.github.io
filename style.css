@@ -42,7 +42,14 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-
+.footer p{
+    font-size: x-small;
+    text-decoration: none;
+    color: white;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media screen and (max-width: 600px) 
 {
     .container {
