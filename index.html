@@ -10,14 +10,24 @@
 
 </head>
 <body>
+    
 <div class="container">
     <h1>Rosary Bank</h1>
     <label for="credit">Rosary Count :</label>
     <input type="number" id="credit" placeholder="Enter the rosary count recited">
     <label for="debit">Take Away:</label>
     <input type="number" id="debit" placeholder="Enter the count offered for an intention">
-    <button onclick="calculateBalance()">Calculate Balance</button>
-    <p id="balance">Your balance will be displayed here</p>
+    <button onclick="calculateBalance()">Update</button>
+    <div class="counter">
+    <div class="counterBal">
+        <h6>Balance</h6>
+        <p id="balance"></p>
+    </div>
+    <div class="counterTotalRecited">
+        <h6>Total Count Recited</h6>
+        <p id="totalRecited"></p>
+    </div>
+</div>
 </div>
 <div class="footer">
     <p>Made with ❤</p>
