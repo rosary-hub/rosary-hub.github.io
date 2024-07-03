@@ -50,6 +50,34 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
 }
+.counterBal, .counterTotalRecited
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0003;
+    margin: 3px;
+    width: 50%;
+}
+.counterBal p, .counterTotalRecited p
+{
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.counterBal h6, .counterTotalRecited h6
+{
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size:x-small;
+}
+.counter
+{
+    display: flex;
+    flex-direction: row;
+}
 @media screen and (max-width: 600px) 
 {
     .container {
