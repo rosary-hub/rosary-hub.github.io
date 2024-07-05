@@ -3,8 +3,24 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, #3494E6, #EC6EAD);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 h1
 {
     background: -webkit-linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
@@ -16,7 +32,7 @@ label
     font-weight: bold;
 }
 .container {
-    max-width: 400px;
+    max-width: 380px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -26,14 +42,22 @@ label
 
 input, button {
     display: block;
-    width: 100%;
     margin-bottom: 10px;
     padding: 5px;
 }
-
+input
+{
+    width: 350px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: medium;
+}
 button {
-    background-color: #007bff;
+    width: 375px;
+    background-color: #3FA2F6;
     color: #fff;
+    font-weight: bold;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -90,7 +114,7 @@ a:link{
     padding: 5px;
     font-size: 20px;
     font-weight: bold;
-    background-color: rgba(194, 194, 194, 0.2);
+    background-color: #F5F7F8;
     margin: 3px;
     width: 50%;
 }
@@ -112,14 +136,36 @@ a:link{
     display: flex;
     flex-direction: row;
 }
-@media screen and (max-width: 600px) 
+li
+{
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 610px) 
 {
     .container {
-        max-width: 250px;
+        max-width: 320px;
         margin: 50px auto;
         padding: 20px;
         background-color: #ffffff;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+    input
+{
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: medium;
+}
+button {
+    width: 325px;
+    background-color: #3FA2F6;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 }
