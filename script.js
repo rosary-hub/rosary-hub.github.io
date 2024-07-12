@@ -16,4 +16,14 @@ function calculateBalance() {
     document.getElementById('credit').value='';
     document.getElementById('debit').value='';
 }
+function resetCounters() {
+    let reset = confirm("Are you sure?\nDo you want to reset the Counters?");
+    if(reset)
+    {
+    localStorage.removeItem("balance");
+    localStorage.removeItem("totalRecited");
+    location.reload();
+    }
+}
+
 window.onload=calculateBalance;
