@@ -27,6 +27,19 @@ h1
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.reset
+{
+    width: 35px;
+    height: 35px;
+    margin-left: 140px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.top
+{
+    display: flex;
+    flex-direction: row;
+}
 label
 {
     font-weight: bold;
@@ -143,6 +156,10 @@ li
 
 @media screen and (max-width: 610px) 
 {
+    h1
+    {
+        font-size: 23px;
+    }
     .container {
         max-width: 320px;
         margin: 50px auto;
@@ -166,6 +183,14 @@ button {
     font-weight: bold;
     border: none;
     padding: 10px;
+    cursor: pointer;
+}
+.reset
+{
+    width: 28px;
+    height: 28px;
+    margin-left: 140px;
+    margin-top: 13px;
     cursor: pointer;
 }
 }
